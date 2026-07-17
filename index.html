@@ -17,6 +17,43 @@
         <main>
             <h2>Hola!</h2>
         </main>
+		<section>
+			<form action="procesar" method="post">
+				<p>Turno (elija uno)</p>
+				<input type="radio" id="m" name="Turno" value="maniana">
+				<label for="m">maniana</label>
+				<input type="radio" id="t" name="Turno" value="tarde">
+				<label for="t">tarde</label>
+				<input type="radio" id="n" name="Turno" value="noche">
+				<label for="n">noche</label>
+				<input type="checkbox" id="acepto" name="acepto">
+				<label for="acepto">Acepto los terminos</label>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+		<section>
+			<form action="procesar" method="post">
+				<p>Turno (elija uno)</p>
+				<input type="radio" id="m" name="Turno" value="maniana">
+				<label for="m">maniana</label>
+				<input type="radio" id="t" name="Turno" value="tarde">
+				<label for="t">tarde</label>
+				<input type="radio" id="n" name="Turno" value="noche">
+				<label for="n">noche</label>
+				<input type="checkbox" id="acepto" name="acepto">
+				<label for="acepto">Acepto los terminos</label>
+				<button type="submit">Enviar</button>
+				<label for"dep">Departamento</label>
+				<select> id="dep" name="dep">
+					<option value="">--Elije--</option>
+					<option value="lp">La Paz</option>
+					<option value="cbba">Cochabamba</option>
+					<option value="sc">Santa Cruz</option>
+				</select>
+				<label for="msj">Tu mensaje</label>
+				<textarea id="msj" name="msj" rows="5"></textarea> 
+			</form>
+		</section>	
         <section id="Sobre-mi">
             <p>Quien soy?</p>
 		<ul>
@@ -41,6 +78,52 @@
 		<dt>Shell</dt> <dd>Es una terminal</dd>
 		<dt>Permisos</dt> <dd>Se dan y conceden con chmod</dd>
 		</dl>
+	</section>
+	<section>
+		<table>
+			<caption>Horario de laboratorio</caption>
+			<thead>
+				<tr>
+					<th scope="col">Dia</th>	
+					<th scope="col">Hora</th>	
+					<th scope="col">Aula</th>	
+				</tr>	
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lunes</td>
+					<td>08:00</td>
+					<td>Lab 2</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>Horario de laboratorio</caption>
+			<thead>
+				<tr>
+					<th colspan="2">Dia</th>	
+					<th scope="col">Hora</th>	
+					<th scope="col">Aula</th>	
+				</tr>	
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lunes</td>
+					<td>08:00</td>
+					<td>Lab 2</td>
+				</tr>
+				<tr>
+					<td rowspan="2">martes</td>
+					<td>09:00</td>
+					<td>web 1</td>
+				</tr>	
+				<tr>
+					<td>10:00</td>
+					<td>calculo</td>
+				</tr>
+
+			</tbody>
+		</table>
 	</section>
         <footer>
             <h2>Por que es interesante</h2>
